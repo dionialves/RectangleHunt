@@ -1,1 +1,2 @@
-# RectangleHunt
+# Rectangle Hunt
+

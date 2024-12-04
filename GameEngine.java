@@ -6,6 +6,8 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferStrategy;
 
+import static java.lang.Thread.sleep;
+
 public class GameEngine extends Canvas implements Runnable, MouseListener, KeyListener {
     public static final int WIDTH = 1280;
     public static final int HEIGHT = 720;
@@ -19,7 +21,7 @@ public class GameEngine extends Canvas implements Runnable, MouseListener, KeyLi
     private final RectangleSpawner spawner;
 
     public GameEngine() {
-        // Seta os valores de altura e largura dentro do objeto Dimension que é atribuido
+        // Seta os valores de altura e largura dentro do objeto Dimension que é atribuído
         // nas propriedades do Canvas via setPreferredSize
         this.setPreferredSize(new Dimension(GameEngine.WIDTH, GameEngine.HEIGHT));
         // Adiciona a captura dos cliques do mouse
